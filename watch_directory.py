@@ -37,7 +37,9 @@ class MyHandler(FileSystemEventHandler):
         #print(f'event type: {event.event_type}  path : {event.src_path}')
         if(event.src_path[-4:] == '.xml'):
         	with open(event.src_path,'r') as f: # The with keyword automatically closes the file when you are done
+        		print('XXXXSTARTXMLXXX')
         		print(f.read())
+        		print('XXXENDXMLXXX')
 
 
 
